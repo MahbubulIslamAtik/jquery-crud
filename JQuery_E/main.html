@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+     <span class="red">1</span>
+     <span class="red">2</span>
+     <span class="red">3</span>
+       <br>
+     <span class="purple">4</span>
+     <span class="purple">5</span>
+     <span class="purple">6</span>
+
+    <div id="output"> </div>
+
+    <button id="red">
+       Red
+    </button>
+
+    <button id="purple">
+        Purple
+     </button>    
+
+    <script>  
+      
+        $(function(){
+
+            $("#purple").on("click",function(){
+
+                $(".purple").css({'color':'purple','font-size':'20px','font-weight':'bold'});
+
+            });
+
+            $("#red").on("click",function(){
+
+                $(".red").css({'color':'red','font-size':'20px','font-weight':'bold'});
+
+            });         
+            
+            
+        });
+
+    </script>
+</body>
+</html>
